@@ -4,6 +4,7 @@
 - make the widget an email validator
 - remove cucumber
 - ajax -> without page object first (fluent wait)
+- animations. we have an article about ajax?
 
 ### Static elements
 

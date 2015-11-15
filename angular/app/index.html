@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="selenium">
+<head>
+  <meta charset="UTF-8">
+  <title>Testing Angularjs with Selenium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" ng-controller="Controller as ctrl">
+    <button ng-click="ctrl.start()">Start</button>
+    <li ng-repeat="post in ctrl.posts">
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.body }}</p>
+    </li>
+  </div>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

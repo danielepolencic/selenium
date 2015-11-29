@@ -1,5 +1,7 @@
 # Testing dynamic pages
 
+- service worker
+
 ## jQuery
 
 When you make an AJAX request with jQuery, that request is recorded into an

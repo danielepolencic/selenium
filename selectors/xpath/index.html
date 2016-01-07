@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+  <div></div>
+
+  <article>
+    <h1>Title</h1>
+    <p>Description</p>
+    <a href="http://google.com">Link</a>
+  </article>
+
+  <article>
+    <h1>Title</h1>
+    <div class="body">
+      <h1>Subtitle</h1>
+    </div>
+  </article>
+
+  <script>
+    'use strict';
+    function xpath(xpathExpression) {
+      const result = document.evaluate(xpathExpression, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+
+      const nodes = [];
+      if (result) for (let i = 0, len = result.snapshotLength; i < len; i++)
+        nodes.push(result.snapshotItem(i));
+
+      return nodes;
+    }
+  </script>
+</body>
+</html>
